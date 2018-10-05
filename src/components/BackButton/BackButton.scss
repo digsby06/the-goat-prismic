@@ -1,0 +1,15 @@
+.BackButton {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+            color: #D4B864;
+        }
+    }
+}

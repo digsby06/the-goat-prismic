@@ -1,0 +1,107 @@
+.home {
+    height: 100vh;
+}
+
+.home-wrapper {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.main-logo-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+.main-rankings {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.rank {
+    cursor: pointer;
+    font-size: 7rem;
+    height: auto;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+    outline: none;
+    width: auto;
+    color: rgba(255, 255, 255, 0.1);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        color: #D4B864;
+    }
+}
+
+
+// Artist Content
+
+.home-artist-content {
+    position: relative;
+    width: 35%;
+}
+
+.home-artist {
+    align-items: center;
+    box-shadow: 10px 15px 10px #000000;
+    display: flex;
+    margin-left: -50%;
+    padding: 3rem;
+    position: absolute;
+    top: 30%;
+    min-width: 550px;
+}
+
+.home-artist-image {
+    margin-right: 2rem;
+
+    img {
+        height: 275px;
+        width: auto;
+    }
+}
+
+.home-artist-details {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.artist-details__hometown {
+    margin-bottom: 3rem;
+}
+
+.artist-details__btn {
+    background-color: #D4B864;
+    border-radius: 40px;
+    cursor: pointer;
+    min-width: 200px;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #000000;
+        border: 2px solid #D4B864;
+    }
+}

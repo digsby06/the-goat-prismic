@@ -1,0 +1,51 @@
+@import './variables/variables';
+
+.bg-gold {
+    background-color: $gold;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.white {
+    color: $white;
+}
+
+.tan {
+    color: $tan;
+}
+
+.gold {
+    color: $gold;
+}
+
+.gray {
+    color: rgba(0, 0, 0, .5);
+}
+
+// Typography
+
+.f-primary {
+    font-family: $primary-font;
+}
+
+.f-header {
+    font-family: $header-font;
+    font-weight: $weight-7;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-family: $primary-font;
+    font-weight: $weight-3;
+    margin: 0;
+}

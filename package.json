@@ -1,10 +1,21 @@
 {
-  "name": "prismic-demo",
+  "name": "the-goat-prismic",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo-cache-inmemory": "^1.2.10",
+    "apollo-client": "^2.4.2",
+    "apollo-link-http": "^1.5.5",
+    "apollo-link-prismic": "^1.0.1",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
+    "node-sass": "^4.9.3",
+    "prismic-reactjs": "^0.3.1",
     "react": "^16.5.2",
+    "react-apollo": "^2.2.4",
     "react-dom": "^16.5.2",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.3"
   },
   "scripts": {
@@ -16,10 +27,12 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://localhost:3000",
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {}
 }

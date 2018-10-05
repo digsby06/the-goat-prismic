@@ -1,0 +1,95 @@
+.info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1800px;
+    padding: 4.5rem 0 5rem;
+    width: 95%;
+
+    @media (max-width: 1024px) {
+        padding: 1rem 0 1rem;
+    }
+}
+
+.artist-details {
+    padding: 2rem;
+    width: 45%;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.info-bio {
+    margin-bottom: 2rem;
+
+    @media (max-width: 1024px) {
+        .info-bio__copy,
+        .info-header {
+            text-align: center;
+        }
+    }
+}
+
+.info-header {
+    margin-bottom: 1.25rem;
+}
+
+.info-bio__copy {
+    font-size: 1.5rem;
+    text-align: left;
+    @media (max-width: 600px) {
+        font-size: 1rem;
+    }
+}
+
+.info-bars {
+    .info-header {
+        margin-bottom: 1.25rem;
+    }
+
+    p {
+        color: #fff;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        @media (max-width: 600px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.info-albums {
+    text-align: center;
+    padding: 2rem 0;
+    width: 45%;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+
+    .info-header {
+        margin-bottom: 2rem;
+    }
+}
+
+.album-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.album {
+    padding: 1rem;
+    width: 200px;
+
+    .album__title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .album__cover {
+        margin-bottom: 1.5rem;
+    }
+}
