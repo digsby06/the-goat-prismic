@@ -1,3 +1,11 @@
+.intro-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../images/radio-bg.jpg');
+    background-blend-mode: multiply;
+}
+
 .home-intro {
     align-items: center;
     display: flex;
@@ -5,12 +13,31 @@
     justify-content: center;
 }
 
-.home-intro h1 {
-    font-size: 4rem;
+.intro-copy {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.home-intro p {
+.intro-copy h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: font-size 0.3s ease;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+
+.intro-copy p {
     font-size: 2rem;
+    transition: font-size 0.3s ease;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 }
 
 @keyframes jump {
@@ -212,14 +239,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 .honorable-mentions h1 {
+    text-align: center;
     font-size: 4rem;
+    margin-bottom: 1rem;
+    transition: font-size 0.3s ease;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
 }
 
 .honorable-artists {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .honorable-artists p {
@@ -233,6 +275,7 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .debate-your-mother p {
