@@ -7,12 +7,16 @@ import { Animated } from "react-animated-css";
 import ReactFullpage from '@fullpage/react-fullpage';
 import arrow from 'images/right-arrow.svg';
 import down from 'images/down-arrow.svg';
-import maximize from 'images/maximize.svg';
 import { TwitterShareButton } from 'react-twitter-embed';
 
 import { GET_ALL_ARTISTS } from 'queries';
 
 import './Home.scss';
+
+// NOTE: if using fullpage extensions/plugins put them here and pass it as props
+const pluginWrapper = () => {
+  require('fullpage.js/vendors/scrolloverflow');
+};
 
 class Home extends React.Component {
   constructor(props) {
@@ -41,6 +45,8 @@ class Home extends React.Component {
 
     return (
         <ReactFullpage
+            scrollOverflow={true}
+            pluginWrapper={pluginWrapper}
             onLeave={this.onLeave}
             render={({ state, fullpageApi }) => {
                 return (
@@ -69,7 +75,7 @@ class Home extends React.Component {
                               return (
                                 <div className="section bg-gray">
                                     <div className={`artist-rank ${isGoat} f-primary`}>
-                                        <Animated animationIn="fadeInLeft" isVisible={this.state.activeArtist === (artistIndex + 1)} >
+                                        <Animated animationIn="fadeInLeft" isVisible={activeArtist === (artistIndex + 1)} >
                                             <h1>{artist.node.artist_rank}</h1>
                                         </Animated>
                                     </div>
