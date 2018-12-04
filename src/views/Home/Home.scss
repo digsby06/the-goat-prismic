@@ -1,27 +1,132 @@
-.home {
-    height: 100vh;
-}
-
-.home-wrapper {
-    display: flex;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 1800px;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.main-logo-wrapper {
+.home-intro {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.home-intro h1 {
+    font-size: 4rem;
+}
+
+.home-intro p {
+    font-size: 2rem;
+}
+
+@keyframes jump {
+  0% {
+    	transform: translateY(0);
+  }
+
+  20% {
+    	transform: translateY(0);
+  }
+
+  40% {
+    	transform: translateY(-20px);
+  }
+
+  50% {
+    	transform: translateY(0);
+  }
+
+  60% {
+    	transform: translateY(-15px);
+  }
+
+  80% {
+    	transform: translateY(0);
+  }
+
+  100% {
+    	transform: translateY(0);
+  }
+}
+
+.home-intro .circle-btn {
+    animation: jump 1.5s ease 0s infinite normal ;
+    margin-top: 2rem;
+}
+
+.circle-btn {
+    background-color: #D4B864;
+    border-radius: 50%;
+    border: 2px solid #D4B864;
+    cursor: pointer;
+    display: flex;
+    height: 20px;
+    outline: none;
+    padding: 1rem;
+    text-decoration: none;
+    width: 20px;
+
+    img {
+        height: 20px;
+        padding: 0;
+        width: 20px;
+    }
+
+    &:hover {
+        background-color: #000000;
+        border: 2px solid #D4B864;
+    }
+}
+
+.artist-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.artist-rank {
+    font-size: 7rem;
+    left: 10%;
+    position: absolute;
+    top: 5%;
+    transition: font-size 0.3s ease;
+
+    @media (max-width: 1024px) {
+        font-size: 5rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
+
+}
+
+
+.artist-content__name {
+    font-size: 6rem;
+    transition: font-size 0.3s ease;
+
+    @media (max-width: 1024px) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+
+.artist-content__hometown {
+    font-size: 3rem;
+    transition: font-size 0.3s ease;
     margin-bottom: 2rem;
+
+    @media (max-width: 1024px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+
+.main-logo-wrapper {
+    text-align: center;
 
     h1 {
         font-size: 4rem;
@@ -59,7 +164,7 @@
 // Artist Content
 
 .home-artist-content {
-    position: relative;
+    height: 100%;
     width: 35%;
 }
 
@@ -88,20 +193,48 @@
     text-align: center;
 }
 
-.artist-details__hometown {
-    margin-bottom: 3rem;
+.artist-overlay {
+    background-color: #D4B864;
 }
 
-.artist-details__btn {
-    background-color: #D4B864;
-    border-radius: 40px;
-    cursor: pointer;
-    min-width: 200px;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
+.artist-expand {
+    position: absolute;
+}
 
-    &:hover {
-        background-color: #000000;
-        border: 2px solid #D4B864;
-    }
+.artist-expand .circle-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.honorable-mentions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.honorable-mentions h1 {
+    font-size: 4rem;
+}
+
+.honorable-artists {
+    display: flex;
+}
+
+.honorable-artists p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.debate-your-mother {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.debate-your-mother p {
+    padding-bottom: 2rem;
 }

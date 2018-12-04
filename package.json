@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.9",
     "apollo-cache-inmemory": "^1.2.10",
     "apollo-client": "^2.4.2",
     "apollo-link-http": "^1.5.5",
@@ -16,7 +17,8 @@
     "react-dom": "^16.5.2",
     "react-loading": "^2.0.3",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.0.3",
+    "react-twitter-embed": "^2.0.4"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -2,7 +2,7 @@ import gql from 'graphql-tag';
 
 export const GET_ALL_ARTISTS = gql`
     query {
-        allArtists(sortBy: artist_rank_ASC) {
+        allArtists(sortBy: artist_rank_DESC) {
             edges {
                 node {
                     _meta {
